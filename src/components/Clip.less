@@ -2,17 +2,26 @@
   position: absolute;
   top: 0;
   height: 100%;
+  border: solid 1px #4e5a5e;
+  border-radius: 6px;
   background-image: url("https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png");
   background-repeat: repeat-x;
   background-size: contain;
   cursor: grab;
   z-index: 1;
+  transition: border .3s ease;
+
+  &:hover,
+  &:focus {
+    border: solid 1px #09a7e5;
+  }
 
   .handle {
     position: absolute;
-    top: 0;
-    width: 2px;
-    height: 100%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 4px;
+    height: 10px;
     background-color: #09a7e5;
     cursor: ew-resize;
 
@@ -21,7 +30,7 @@
     }
 
     &.right {
-      right: -2px;
+      right: -6px;
     }
   }
 }

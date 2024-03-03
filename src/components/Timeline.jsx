@@ -22,7 +22,7 @@ const Timeline = () => {
     }
   ])
 
-  const onCreateTrack = (clip) => {
+  const onCreateTrack = (event, clip) => {
     const newTrackId = `track-${Date.now()}`
     
     setTracks((prev) => {

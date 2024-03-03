@@ -33,7 +33,7 @@ const Track = ({
 
   const onDragEnd = (event, clip) => {
     if (!event.dropzone) {
-      onCreateTrack(clip, event)
+      onCreateTrack(event, clip)
       return
     }
 
