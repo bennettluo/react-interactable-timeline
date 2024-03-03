@@ -1,0 +1,27 @@
+.clip {
+  position: absolute;
+  top: 0;
+  height: 100%;
+  background-image: url("https://cdn.freebiesupply.com/logos/large/2x/react-1-logo-png-transparent.png");
+  background-repeat: repeat-x;
+  background-size: contain;
+  cursor: grab;
+  z-index: 1;
+
+  .handle {
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: #09a7e5;
+    cursor: ew-resize;
+
+    &.left {
+      left: -2px;
+    }
+
+    &.right {
+      right: -2px;
+    }
+  }
+}
